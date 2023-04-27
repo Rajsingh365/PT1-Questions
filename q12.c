@@ -25,8 +25,7 @@ int main()
 //         {
 //             s=i*i+j*j;
 //             k=sqrt(s);
-//             if(k<=100)
-//             if(k*k==s)
+//             if(k*k==s&&k<=100)
 //                 printf("%3d%3d%3d \n",i,j,k);
 //         }
 //     }
