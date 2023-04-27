@@ -4,12 +4,12 @@ int main()
 {
     float a,b,c;
     printf("Enter Three Numbers :");
-    scanf("%f%f%f",&a,&b,&c);
+    scanf("%d%d%d",&a,&b,&c);
     if(a>b&&a>c)
-    printf("%f",a);
+    printf("%d",a);
     else if(b>c)
-    printf("%f",b);
+    printf("%d",b);
     else
-    printf("%f",c);
+    printf("%d",c);
     return 0;
 }
