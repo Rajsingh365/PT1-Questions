@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main()
+{
+    int i,j,k=1,lines;
+    printf("Enter a number :");
+    scanf("%d",&lines);
+    for(i=1;i<=lines;i++)
+    {
+        for(j=1;j<=lines;j++)
+        {
+            if(j<=i)
+            printf("%d ",k++);
+            else
+            printf("  ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
