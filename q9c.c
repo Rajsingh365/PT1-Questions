@@ -9,6 +9,6 @@ int main()
     if(k*k==number)
     printf("%d is perfect square ",number);
     else
-    printf("%d is perfect square ",number);
+    printf("%d is not a perfect square ",number);
     return 0;
 }
