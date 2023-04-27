@@ -2,34 +2,23 @@
 #include<math.h>
 int main()
 {
-    int i,n,num,count,sum,j;
-    for(i=100;i<=9999;i++)
+    int n,i,num,count=0,sum=0,no;
+    printf("Enter a Number :");
+    scanf("%d",&n);
+    num=no=n;
+    while(num)
     {
-        sum=0;
-        count=0;
-        n=num=i;
-        while(n)
-        {
-            n/=10;
-            count++;
-        }
-        if(count==3)
-        {
-            for(j=1;j<=count;j++)
-            {
-            sum=sum+pow(num%10,count);
-            num/=10;
-            }
-        }
-        else
-        {
-            for(j=1;j<=count;j++)
-            sum=sum+pow(num%10,count);
-            num/=10;
-        }
-        if(i==sum)
-        printf("%d\n",i);
-
+        num/=10;
+        count++;
     }
+    for(i=1;i<=count;i++)
+    {
+        sum=sum+pow(n%10,count);
+        n/=10;
+    }
+    if(sum==no)
+    printf("%d is a armstrong number",no);
+    else
+    printf("%d is not a armstrong number",no);
     return 0;
 }
