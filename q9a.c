@@ -7,8 +7,11 @@ int main()
     scanf("%d",&n);
     for(f1=-1,f2=1;f<=n;f=f1+f2,f1=f2,f2=f)
     if(n==f)
+    {
      printf("The %d is a term of fibonacci series",n);
-    else
+     break;
+    }
+    if(f>n)
      printf("The %d is not a term of fibonacci series",n);
     return 0;
 }
